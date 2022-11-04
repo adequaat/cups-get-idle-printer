@@ -4,7 +4,7 @@ import parseDeviceLines from "./parseDeviceLines.js";
 import parsePrinterStatusLines from "./parsePrinterStatusLines.js";
 import combine from "./combine.js";
 
-export default function getCupsPrinters () {
+export default function getCupsPrinters() {
   return new Promise((resolve, reject) => {
     const childProcess = exec("lpstat -r -v -p", {
       stdio: ["ignore", "pipe", "pipe"],

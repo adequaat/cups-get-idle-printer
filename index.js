@@ -1,3 +1,5 @@
 import getCupsPrinterStatusses from './helpers/getCupsPrinterStatusses.js';
 
-console.log( await getCupsPrinterStatusses());
+export default async function getCupsPrinters() {
+  return await getCupsPrinterStatusses();
+}
