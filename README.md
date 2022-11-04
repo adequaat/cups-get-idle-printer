@@ -1,2 +1,2 @@
-# cups-get-idle-printer
-Gets the currently idle CUPS printer(s)
+# cups-get-printers
+Gets the CUPS printer(s) with status and path info
