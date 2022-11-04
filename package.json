@@ -1,0 +1,28 @@
+{
+  "name": "cups-get-printers",
+  "version": "1.0.0",
+  "description": "Gets the CUPS printer(s) with status and path info",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adequaat/cups-get-idle-printer.git"
+  },
+  "keywords": [
+    "CUPS",
+    "idle",
+    "printer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adequaat/cups-get-idle-printer/issues"
+  },
+  "homepage": "https://github.com/adequaat/cups-get-idle-printer#readme",
+  "devDependencies": {
+    "ava": "^5.0.1"
+  }
+}
