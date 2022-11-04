@@ -1,5 +1,5 @@
-import getCupsPrinterStatusses from './helpers/getCupsPrinterStatusses.js';
+import _getCupsPrinters from './helpers/getCupsPrinters.js';
 
 export default async function getCupsPrinters() {
-  return await getCupsPrinterStatusses();
+  return await _getCupsPrinters();
 }
