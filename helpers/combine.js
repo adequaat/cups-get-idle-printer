@@ -4,7 +4,8 @@ export default function combine(devices, statusses) {
       Object.assign(prev, {
         [key]: {
           status: statusses[key],
-          path: devices[key],
+          path: devices[key].path,
+          local: devices[key].local
         },
       }),
     {}

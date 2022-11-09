@@ -1,4 +1,4 @@
-const printerStatusRegeXp = /^printer\s(.*?)\s(is|now)\s(.*?)\./gm;
+const printerStatusRegeXp = /^printer\s(.*?)(\sis\s|\snow\s|\s)(\w*)?/gm;
 
 export default function parsePrinterStatusLines(str) {
   return Array.from(str.matchAll(printerStatusRegeXp)).reduce(

@@ -6,7 +6,7 @@ test("should parse a device line succesfuly", (t) => {
     parsePrinterStatusLines(
       "printer printerName now printing printerName-59.  enabled since Fri Nov  4 11:29:23 2022\nSending data to printer."
     ),
-    { printerName: "printing printerName-59" }
+    { printerName: "printing" }
   );
 
   t.deepEqual(
@@ -14,5 +14,12 @@ test("should parse a device line succesfuly", (t) => {
       "printer printerName is idle.  enabled since Fri Nov  4 11:29:23 2022\nSending data to printer."
     ),
     { printerName: "idle" }
+  );
+
+  t.deepEqual(
+    parsePrinterStatusLines(
+      "printer printerName disabled some random text."
+    ),
+    { printerName: "disabled" }
   );
 });
