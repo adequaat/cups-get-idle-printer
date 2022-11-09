@@ -1,6 +1,6 @@
 {
   "name": "cups-get-printers",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Gets the CUPS printer(s) with status and path info",
   "main": "index.js",
   "type": "module",
